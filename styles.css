@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    padding-top: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* About Section */
+.about-section img {
+    max-width: 250px;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #f8f9fa;
+}
+
+.skill-category {
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    transition: transform 0.3s;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+}
+
+.skill-tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background: #e0f7fa;
+    color: #00796b;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.skill-tag:hover {
+    background: #b2ebf2;
+    transform: scale(1.05);
+}
+
+.skill-tag i {
+    margin-right: 5px;
+}
+
+/* Programming Languages (special styling) */
+.skill-tag.programming {
+    background: #e3f2fd;
+    color: #0d47a1;
+}
+
+/* Cloud Technologies */
+.skill-tag.cloud {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Database */
+.skill-tag.database {
+    background: #f3e5f5;
+    color: #6a1b9a;
+}
+
+/* OS */
+.skill-tag.os {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+/* Framework */
+.skill-tag.framework {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* Projects Section */
+.project-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.tech-tags {
+    min-height: 50px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Animation for skills */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.skill-tag {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* Delay animations for visual effect */
+.skill-tag:nth-child(1) { animation-delay: 0.1s; }
+.skill-tag:nth-child(2) { animation-delay: 0.2s; }
+.skill-tag:nth-child(3) { animation-delay: 0.3s; }
+.skill-tag:nth-child(4) { animation-delay: 0.4s; }
+.skill-tag:nth-child(5) { animation-delay: 0.5s; }
+.skill-tag:nth-child(6) { animation-delay: 0.6s; }
+.skill-tag:nth-child(7) { animation-delay: 0.7s; }
+.skill-tag:nth-child(8) { animation-delay: 0.8s; }
+.skill-tag:nth-child(9) { animation-delay: 0.9s; }
+.skill-tag:nth-child(10) { animation-delay: 1.0s; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .navbar-nav {
+        text-align: center;
+        padding-top: 1rem;
+    }
+    section {
+        padding: 60px 0;
+    }
+}
